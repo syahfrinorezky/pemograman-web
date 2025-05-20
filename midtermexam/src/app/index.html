@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../style//output.css" />
+  </head>
+  <body>
+    <div class="bg-slate-300 min-h-screen flex items-center justify-center">
+      <div class="bg-white w-1/3 p-3 flex flex-col gap-5">
+        <h1 class="text-center text-lg font-bold">FORM KONTAK</h1>
+        <form
+          action="proses_data.php"
+          method="post"
+          class="flex flex-col gap-2">
+          <label for="nama" class="flex flex-col gap-1">
+            <span>Nama</span>
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Masukkan nama"
+              class="border rounded-md p-2" />
+          </label>
+          <label for="email" class="flex flex-col gap-1">
+            <span>Email</span>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Masukkan email"
+              class="border rounded-md p-2" />
+          </label>
+          <label for="telepon" class="flex flex-col gap-1">
+            <span>Nomor telepon</span>
+            <input
+              type="text"
+              name="telepon"
+              id="telepon"
+              placeholder="Masukkan nomor telepon"
+              class="border rounded-md p-2" />
+          </label>
+          <label for="pesanan" class="flex flex-col gap-1">
+            <span>Nomor Pesanan</span>
+            <input
+              type="text"
+              name="pesanan"
+              id="pesanan"
+              placeholder="Masukkan nomor pesanan"
+              class="border rounded-md p-2" />
+          </label>
+          <label for="produk" class="flex flex-col gap-1">
+            <span>Produk</span>
+            <select name="produk" id="produk" class="border rounded-md p-2">
+              <option value="">Pilih Produk</option>
+              <option value="PRODUK A">PRODUK A</option>
+              <option value="PRODUK B">PRODUK B</option>
+              <option value="PRODUK C">PRODUK C</option>
+            </select>
+          </label>
+          <label for="deskripsi" class="flex flex-col gap-1">
+            <span>Deskripsi</span>
+            <textarea
+              name="deskripsi"
+              id="deskripsi"
+              class="border rounded-md p-2"
+              placeholder="Masukkan deskripsi"></textarea>
+          </label>
+          <button
+            type="submit"
+            class="p-2 bg-blue-400 rounded-md text-white mt-5">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
